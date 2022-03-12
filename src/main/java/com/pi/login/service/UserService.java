@@ -30,7 +30,7 @@ public class UserService {
 	}
 
 	@org.springframework.transaction.annotation.Transactional
-	public void 회원탈퇴 (int id) {
+	public void 회원탈퇴 (Long id) {
 	 userRepository.deleteById(id);
 			
 	}

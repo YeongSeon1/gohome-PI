@@ -57,7 +57,7 @@ public class UserApiController {
 	}
 	
 	@PostMapping("/auth/delete/{id}")
-	public void deleteById( @PathVariable int id){
+	public void deleteById( @PathVariable Long id){
 		userService.회원탈퇴(id);
 		
 	}
